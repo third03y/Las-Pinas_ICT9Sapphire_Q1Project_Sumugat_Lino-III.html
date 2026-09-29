@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Q1 Project </title>
+<style>
+    body {
+        text-align: center;
+        color: rgb(14, 16, 152);
+        background-color: rgb(2, 124, 91);
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .title-box {
+        background: linear-gradient(to right, #25007b, #380077);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    .section-title {
+        background: linear-gradient(to right, #25007b, #380077);
+        color: white;
+        text-align: center;
+        padding: 12px 20px;
+        border-radius: 12px 12px 0 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .about-box,
+    .our-works,
+    .section-box {
+        border: 2px solid #3a024c;
+        border-radius: 15px;
+        background-color: #f1ebff;
+        padding: 0;
+        overflow: hidden;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .about-box h3,
+    .our-works h3 {
+        margin: 20px;
+    }
+
+    .work-gallery {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+        padding: 15px 20px 10px;
+        margin: 0;
+    }
+
+    .work-gallery li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-works img {
+        display: block;
+        margin: 0;
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .work-label {
+        display: inline-block;
+        border: 2px solid #8ecae6;
+        border-radius: 8px;
+        padding: 8px 14px;
+        margin: 10px auto 0;
+        background-color: rgba(142, 202, 230, 0.15);
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .contact-form label {
+        font-weight: bold;
+        color: rgb(14, 16, 152);
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #3a024c;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .contact-form button {
+        background: linear-gradient(to right, #25007b, #380077);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+    
+</head>
+<body>
+    <div class="title-box">
+        <h1>Hello, I am Thirdy Sumugat together with Sean Ornum.</h1>
+        <h2>Welcome to our personal portfolio!</h2>
+    </div>
+
+    <img src="No_budget_duo.com.png" alt="No budget duo" width="250" height="250">
+
+    <div class="about-box">
+        <div class="section-title">About us</div>
+        <h3>Hello! We are Thirdy Sumugat and Sean Ornum, students passionate about sports.</h3>
+    </div>
+
+    <div class="our-works">
+        <div class="section-title">Our Works</div>
+        <h3>Examples of Our Works (Mix of both worlds):</h3>
+        <h4 class="work-label">This is Thirdy's work!</h4>
+        <ul class="work-gallery">
+            <li><img src="Third Drill 2.png" alt="Our work" width="400" height="500"></li>
+            <li><img src="Third SW1.png" alt="Our work" width="400" height="300"></li>
+            <li><a href="https://github.com/third03y/Drill-1" target="_blank">View More</a></li>
+        </ul>
+        <h4 class="work-label">This is Sean's work!</h4>
+        <ul class="work-gallery">
+            <li><img src="Sean Drill 2.png" alt="Our work" width="400" height="500"></li>
+            <li><img src="Sean SW1.png" alt="Our work" width="400" height="300"></li>
+            <li><a href="https://github.com/2Generous/Drill-1_Sean_Ornum_9-Sapphire" target="_blank">View More</a></li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">Contact Us!</div>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+ 
+
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
